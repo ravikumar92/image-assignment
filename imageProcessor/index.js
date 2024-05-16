@@ -1,8 +1,6 @@
 const express = require("express");
 const imageRouter = express.Router();
 
-const imageData = require("../images.json");
-
 imageRouter.get("/", async (req, res) => {
     const dbClient = req.dbClient;
     try{
